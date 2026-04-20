@@ -1,0 +1,138 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#0f0f0f,#141e30,#243b55);
+  overflow:hidden;
+}
+
+/* Matrix canvas background */
+#matrix{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+/* Center login card */
+.box{
+  width:360px;
+  max-width:92%;
+  padding:32px 28px;
+  text-align:center;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.18);
+  border-radius:18px;
+  backdrop-filter:blur(12px);
+  box-shadow:0 10px 30px rgba(0,0,0,0.35);
+}
+
+h1,h2{
+  color:#ffffff;
+  margin-bottom:20px;
+}
+
+p{
+  color:#e5e5e5;
+}
+
+input[type="text"],
+input[type="password"]{
+  width:100%;
+  padding:12px 14px;
+  border:none;
+  border-radius:10px;
+  outline:none;
+  margin-bottom:14px;
+  background:rgba(255,255,255,0.9);
+  font-size:15px;
+}
+
+.remember{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  color:#ffffff;
+  font-size:14px;
+  margin-bottom:18px;
+}
+.dashboard{
+  width:95%;
+  max-width:950px;
+  text-align:center;
+  color:white;
+}
+
+.student-card{
+  background:rgba(255,255,255,0.08);
+  padding:20px;
+  border-radius:16px;
+  margin:20px auto;
+  border:1px solid rgba(255,255,255,0.15);
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+  max-width:500px;
+}
+
+.student-card h2{
+  margin-bottom:10px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  margin-top:25px;
+}
+
+.card{
+  background:rgba(255,255,255,0.08);
+  padding:25px;
+  border-radius:18px;
+  text-decoration:none;
+  color:white;
+  cursor:pointer;
+  border:1px solid rgba(255,255,255,0.15);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  background:rgba(0,255,255,0.12);
+}
+.remember input{
+  width:auto;
+}
+
+button{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:linear-gradient(90deg,#00c6ff,#0072ff);
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:translateY(-2px);
+  opacity:0.95;
+}
+
+#msg{
+  margin-top:14px;
+  font-weight:bold;
+  color:#ffffff;
+}

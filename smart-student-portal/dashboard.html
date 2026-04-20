@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="matrix"></canvas>
+
+<div class="dashboard">
+
+  <h1>📊 Student Dashboard</h1>
+
+  <!-- Student Info -->
+  <div class="student-card">
+    <h2>👤 Student Info</h2>
+    <p><strong>Name:</strong> <span id="sname">Loading...</span></p>
+    <p><strong>Roll No:</strong> 2026001</p>
+    <p><strong>Class:</strong> FY B.Tech</p>
+  </div>
+
+  <!-- Dashboard Cards -->
+  <div class="cards">
+
+    <a href="result.html" class="card">
+      <h2>📝 Results</h2>
+      <p>Calculate marks & grades</p>
+    </a>
+
+    <a href="courses.html" class="card">
+      <h2>📁 Courses</h2>
+      <p>View saved student data</p>
+    </a>
+
+    <div class="card" onclick="logout()">
+      <h2>🚪 Logout</h2>
+      <p>Return to login page</p>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+<script src="dashboard.js"></script>
+
+</body>
+</html>
